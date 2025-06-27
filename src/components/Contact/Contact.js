@@ -11,11 +11,11 @@ const Contact = () => {
   e.preventDefault();
 
   emailjs.sendForm(
-    'service_f0bzezo',
-    'template_78cbtmm',
-    form.current,
-    '_hmMxIyR8O4-IkAZO'
-  ).then(
+  process.env.REACT_APP_EMAILJS_SERVICE_ID,
+  process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+  form.current,
+  process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+).then(
     () => {
       alert('Message Sent Successfully!');
       form.current.reset();
