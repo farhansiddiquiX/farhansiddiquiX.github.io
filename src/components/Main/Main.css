@@ -1,0 +1,96 @@
+.bg {
+  background: url("/public/Images/header-background.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.head {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: rgba(255, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 5rem; /* instead of margin */
+  text-align: center;
+}
+
+.head h1{
+    font-size: 5rem;
+    background: none;
+}
+.head p{
+    background: none;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding:2rem 0 2rem 0;
+}
+.links a{
+    text-decoration: none;
+    color: white;   /* or your icon color */
+    background: none;  /* make sure */
+    height: 40px;
+    width: 40px;
+}
+.links a:hover{
+    color: white;
+}
+.buttons{
+    display: flex;
+    background: none; 
+    
+    gap: 10px;
+}
+.buttons button{
+    color: white;
+    background: none;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+#resume{
+    border: 2px solid rgb(255, 102, 0);
+}
+#download{
+    height: 60px;
+    width: 60px;
+    line-height: 100%;
+}
+@media (max-width: 768px) {
+  .head h1 {
+    font-size: 3rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .buttons button {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .head {
+    width: 90%;         /* Make card width responsive */
+    padding: 2rem;       /* Reduce inner spacing */
+    border-radius: 15px;
+  }
+
+  .bg {
+    padding-top: 4rem;   /* Add a little more spacing at top if needed */
+  }
+}

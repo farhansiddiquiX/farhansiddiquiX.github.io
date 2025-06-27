@@ -1,0 +1,147 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background: rgb(23, 24, 24);
+    color: white;
+    padding: 4rem 0 4rem 0;
+}
+.form-det{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-det input{
+    outline:none;
+    width: 30vw;
+    height: 7vh;
+    background-color: rgb(70, 69, 69);
+    border: none;
+    border-radius:5px ;
+    margin-bottom: 1rem;
+    color: white;
+}
+.form-det input:focus{
+  border:2px solid #f7470d;
+}
+.form-det textarea:focus{
+    border:2px solid #f7470d;
+}
+.form-det textarea{
+    outline: none;
+    width: 30vw;
+    height: 15vh;
+    background-color: rgb(70, 69, 69);
+    border: none;
+    border-radius:5px ;
+    margin-bottom: 1rem;
+    color: white;
+}
+.form-det button{
+    border:2px solid #f7470d;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.info-det{
+    color: rgb(187, 181, 181);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-det a{
+    display: inline-block;
+    color:  rgb(187, 181, 181);
+    text-decoration: none;
+    padding: 8px;
+}
+.info-det a:active{
+    color: white;
+    border:3px solid #f7470d;
+    border-radius: 5px;
+}
+.info-det a:hover{
+    color: white;
+}
+.page {
+  position: relative; /* so absolute works within this container */
+}
+
+.scroll-top-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;  /* place between Contact and Footer */
+  
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
+  margin-bottom: 10px;
+}
+
+.contact-link a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+@media (max-width: 1000px) {
+  .contact {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .form-det,
+  .info-det {
+    align-items: center;
+    width: 100%;
+  }
+
+  #form {
+    align-items: center;
+  }
+
+  .form-det input,
+  .form-det textarea {
+    width: 85vw;
+  }
+
+  .info-det a {
+    font-size: 0.95rem;
+    padding: 6px;
+  }
+
+  .scroll-top-btn {
+    bottom: -35px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,117 @@
+.exp {
+  background: rgb(255, 255, 255);
+  padding-top: 4rem;
+}
+
+.education,
+.work,
+.skills,
+.extra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 5vw; /* ensures breathing space on both sides */
+  flex-wrap: wrap;
+}
+
+.edu-title,
+.work-title,
+.skills-title,
+.extra-title {
+  min-width: 200px;
+  text-decoration: underline orange;
+  text-underline-offset: 10px;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.edu-desc,
+.work-desc,
+.skills-desc,
+.extra-desc {
+  color: rgb(70, 68, 68);
+  flex: 1;
+}
+
+.edu-desc h4,
+.work-desc h4,
+.skills-desc h4,
+.extra-desc h4 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.edu-desc p,
+.work-desc p,
+.extra-desc p,
+.skills-desc p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+hr {
+  outline: none;
+  max-width: 85vw;
+  margin: 2rem auto;
+  color: rgba(175, 167, 167, 0.523);
+  background-color: rgb(191, 182, 182);
+  height: 1px;
+  border: none;
+}
+
+.skills-set1,
+.skills-set2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* ---------- Media Queries ---------- */
+@media (max-width: 768px) {
+  .education,
+  .extra,
+  .work,
+  .skills {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1.5rem;
+  }
+
+  .edu-title,
+  .extra-title,
+  .work-title,
+  .skills-title {
+    margin: 0 0 1rem 0;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .skills-set1,
+  .skills-set2 {
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+  }
+
+  .edu-desc,
+  .extra-desc,
+  .skills-desc {
+    width: 100%;
+  }
+
+  .skills-desc p {
+    font-size: 0.95rem;
+  }
+
+  hr {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}

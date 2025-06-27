@@ -1,0 +1,43 @@
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(187, 181, 181);   /* or your icon color */
+    background: none;  /* make sure */
+    height: 40px;
+    width: 40px;
+}
+.footer{
+    background: black;
+    padding-top: 4rem;
+}
+.footer p{
+    color: rgb(113, 111, 111);
+    text-align: center;
+    background: black;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+  .links {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .links a {
+    height: 35px;
+    width: 35px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+}

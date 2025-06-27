@@ -1,0 +1,72 @@
+.testimonials-cont{
+    background: url('/public/Images/testimonial.webp');
+    padding: 15vh 0 15vh 0;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: rgba(40, 39, 39, 0.373);
+    color: white;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    border-radius: 40px;
+    padding: 5%;
+}
+.test-cont img{
+  align-self: flex-start;
+  height: 80px;
+  width: 80px;
+  object-fit: cover; /* keeps it from stretching */
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.swiper-slide {
+  display: flex;         /* Make slide a flex container */
+  justify-content: center; /* Center child horizontally */
+  align-items: center;     /* Center child vertically (optional) */
+}
+/* Make inactive dots a custom color */
+.swiper-pagination-bullet {
+  background: #fff;  /* Example: white dots */
+  opacity: 0.5;      /* optional: make them semi-transparent */
+}
+
+/* Make active dot a different color */
+.swiper-pagination-bullet-active {
+  background: #ff8c29;  /* Example: your theme orange */
+  opacity: 1;          /* fully opaque */
+}
+@media (max-width: 768px) {
+  .test-cont {
+    flex-direction: column;
+    width: 85%; /* more flexible on small screens */
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .test-cont img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 1rem;
+  }
+
+  .test-cont h3 {
+    font-size: 1rem;
+  }
+
+  .test-cont h2 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .testimonials-cont {
+    padding: 10vh 0;
+  }
+}

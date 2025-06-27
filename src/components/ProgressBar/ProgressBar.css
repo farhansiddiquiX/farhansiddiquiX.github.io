@@ -1,0 +1,30 @@
+/* ProgressBar.css */
+.progress-bar-container {
+  margin-bottom: 1rem;
+}
+
+.progress-bar-label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.progress-bar-track {
+  background-color: #e3dddd;
+  border-radius: 999px;
+  overflow: hidden;
+  height: 20px;
+  width: 30vw;
+}
+
+@media (max-width: 768px) {
+  .progress-bar-track{
+    width: 80vw;
+  }
+}
+
+.progress-bar-fill {
+  background-color: #ff8c29; /* Orange fill */
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 999px;
+}
