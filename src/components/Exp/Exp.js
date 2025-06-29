@@ -3,7 +3,7 @@ import './Exp.css'
 import ProgressBar from '../ProgressBar/ProgressBar'
 const Exp = () => {
   return (
-    <div className='exp' id='profile'>
+    <div className='exp' id='profile '>
       <div className='education'>
         <div className='edu-title'>
             <h3>EDUCATION</h3>

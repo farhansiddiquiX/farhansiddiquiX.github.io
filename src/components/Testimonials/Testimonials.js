@@ -18,7 +18,7 @@ const Testimonials = () => {
         <SwiperSlide>
           <div className='test-cont'>
             <div>
-              <img src='/Images/Me.jpg' alt='pro'/>
+              <img src='/Images/Me.jpeg' alt='pro'/>
             </div>
             <div>
               <h3>I believe in doing my best on every project I take up. While I’m just starting my journey, I’m confident that future collaborators will value my dedication and attention to detail.</h3>
